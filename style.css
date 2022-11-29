@@ -1,0 +1,135 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ---------------------------------------- */
+/*                  Root                    */
+/* ---------------------------------------- */
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    min-height: 100vh;
+    background-color: var(--Cream);
+}
+main{
+    border-radius: 10px;
+    background-color: var(--White);
+    margin: 6% 5%;
+}
+main picture img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+main .text-perfume{
+    padding: 8%;
+}
+main .text-perfume .title{
+    color: var(--Dark-grayish-blue);
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 400;
+}
+main .text-perfume h1{
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+    margin-top: 4%;
+    font-size: 8.6vw;
+}
+main .text-perfume .details{
+    color: var(--Dark-grayish-blue);
+    font-size: 4.2vw;
+    margin-top: 4%;
+    line-height: 1.4rem;
+}
+main .text-perfume .price{
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    font-size: 9vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+}
+main .text-perfume .price del{
+    color: var(--Dark-grayish-blue);
+    font-size: 4vw;
+    margin-left: 25px;
+}
+main .text-perfume button{
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
+main .text-perfume button img{
+    margin-right: 3px;
+}
+/* ---------------------------------------- */
+/*               Media Query                */
+/* ---------------------------------------- */
+@media screen and (min-width: 700px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    main{
+        display: flex;
+        width: 40%;
+    }
+    main picture{
+        width: 50%;
+    }
+    main picture img{
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+    }
+    main .text-perfume{
+        width: 50%;
+        padding: 4%; 
+    }
+    main .text-perfume .title{
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        font-size: 1vw;
+    }
+    main .text-perfume h1{
+        font-size: 2.5vw;
+        margin-top: 8%;
+    }
+    main .text-perfume .details{
+        font-size: 1vw;
+        margin-top: 8%;
+    }
+    main .text-perfume .price{
+        font-size: 2vw;
+        margin-top: 10%;
+    }
+    main .text-perfume .price del{
+        font-size: 1vw;
+    }
+    main .text-perfume button{
+        font-size: 1vw;
+    }
+
+}
